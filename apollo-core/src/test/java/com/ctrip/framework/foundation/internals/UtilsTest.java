@@ -8,6 +8,9 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * @author Josh Knopp(https://github.com/joshknopp)
+ */
 class UtilsTest {
     @Nested
     class IsBlank {
