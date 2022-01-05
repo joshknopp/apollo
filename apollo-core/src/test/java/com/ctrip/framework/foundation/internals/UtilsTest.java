@@ -64,6 +64,12 @@ class UtilsTest {
             assertFalse(Utils.isOSWindows());
         }
 
+        @Test
+        void falseGivenBlank() {
+            System.setProperty("os.name", "");
+            assertFalse(Utils.isOSWindows());
+        }
+
         // Explicitly calling out case sensitivity; author @nobodyiam should confirm whether this is intentional
         @Test
         void falseGivenAllUppercaseWindows() {
